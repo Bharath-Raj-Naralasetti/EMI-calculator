@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./master.css">
+</head>
+<body>
+    <div class="container">
+        <h1>LOAN CALCULATOR</h1>
+        <fieldset>
+            <legend>LOAN AMOUNT  &#8377</legend>
+            <input onchange="l()" id="loanAmount"  type="number" max="100000" min="0" value="10000" >
+        </fieldset>
+        <fieldset>
+            <legend>INTEREST RATE %</legend>
+            <input onchange="l()" id="interestRate" type="number" max="100" min="0" value="10" >
+        </fieldset>
+        <fieldset>
+            <legend>MONTHS TO PAY</legend>
+            <input onchange="l()" id="months" type="number" min="0" value="12" >
+        </fieldset>
+        <p id="result">MONTHLY PAYMENT :</p>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
